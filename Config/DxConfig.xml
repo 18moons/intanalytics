@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DxConfig>
+    <ServicesConfig>
+        <UserService endpoint="http://localhost:3451/Services/UserService.asmx" />
+        <MediaService endpoint="http://localhost:3451/Services/MediaService.asmx" />
+        <MibService endpoint="http://logon.mediaibox.com.br/mibserver2/MibService.asmx" />
+    </ServicesConfig>
+</DxConfig>

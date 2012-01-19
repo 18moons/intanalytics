@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+  <default>
+    <fileLogTag>MibLog</fileLogTag>
+    <fileLogPath>c:\temp</fileLogPath>
+    <eventViewerLog>Application</eventViewerLog>
+    <eventViewerSource>MibClient2</eventViewerSource>
+    <databaseAlias>default</databaseAlias>
+    <databaseTable>MibLogs</databaseTable>
+    <databaseField>Message</databaseField>
+  </default>
+  <verbose>
+    <trace>true</trace>
+    <file>true</file>
+    <database>false</database>
+    <eventViewer>false</eventViewer>
+    <custom>false</custom>
+  </verbose>
+  <log>
+    <trace>true</trace>
+    <file>true</file>
+    <database>false</database>
+    <eventViewer>false</eventViewer>
+    <custom>false</custom>
+  </log>
+  <errorLog>
+    <trace>true</trace>
+    <file>true</file>
+    <database>false</database>
+    <eventViewer>false</eventViewer>
+    <custom>false</custom>
+  </errorLog>
+  <exception>
+    <trace>true</trace>
+    <file>true</file>
+    <database>false</database>
+    <eventViewer>false</eventViewer>
+    <custom>false</custom>
+  </exception>
+</mibConfig>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+  <default>
+    <useLib>false</useLib>
+    <autUrl>http://www.terra.com.br/comunicacao/aut.cgi</autUrl>
+    <defaultCountry>br</defaultCountry>
+  </default>
+</mibConfig>

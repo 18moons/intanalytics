@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+  <default>
+    <allowEnableTrace>true</allowEnableTrace>
+    <gcdnHashPassword>hashpass</gcdnHashPassword>
+    <gcdnHashTolerance>3600</gcdnHashTolerance>
+    <gcdnPluginAssembly>C:\inetpub\wwwroot\MibPointer2\MibPointer2\bin\MibPointer2.dll</gcdnPluginAssembly>
+    <gcdnPluginClass>MibPointer2.Location.MibUrlLocationPlugin</gcdnPluginClass>
+    <gcdnIntermediateServer1>127.0.0.1</gcdnIntermediateServer1>
+    <gcdnIntermediateServer2>192.168.1.84</gcdnIntermediateServer2>
+  </default>
+</mibConfig>

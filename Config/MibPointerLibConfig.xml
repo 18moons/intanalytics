@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+  <default>
+    <datalayer>oracleprocedure</datalayer> <!-- Standard, OracleProcedure -->
+    <cachetimeAvailableMirrors>30</cachetimeAvailableMirrors>
+    <cachetimeAvailableBpoints>30</cachetimeAvailableBpoints>
+  </default>
+  <security>
+    <standardPluginPassword>11111111111111</standardPluginPassword>
+    <standardPluginTolerance>1500</standardPluginTolerance>
+    <gcdnPluginPassword>plugpass</gcdnPluginPassword>
+  </security>
+  <legacy>
+    <enableMountings>true</enableMountings>
+    <structuredMountings>true</structuredMountings>
+  </legacy>
+  <standard>
+    <balancer>standard</balancer>
+    <signer>standard</signer>
+  </standard>
+  <gcdn>
+    <balancer>gcdn</balancer>
+    <signer>gcdn</signer>
+  </gcdn>
+  <audience>
+    <enableMmedias>true</enableMmedias>
+    <enableLives>true</enableLives>
+    <cachetimeMmedias>30</cachetimeMmedias>
+    <cachetimeLives>30</cachetimeLives>
+  </audience>
+</mibConfig>

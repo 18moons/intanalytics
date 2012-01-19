@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+    <default>
+        <SubtitlePath></SubtitlePath>
+        <SiteURL>http://localhost:3451</SiteURL>
+    </default>
+    <Api>
+        <TwitterConsumerKey>gVXscEUHlOS7mpTCj4A</TwitterConsumerKey>
+        <TwitterConsumerSecret>CPJrgFsGrsOYfYt4kvfPJD7G70T8b0oC81QzmURqg</TwitterConsumerSecret>
+		<FacebookApiKey>71914942ff462234bf3ee558ef053fbd</FacebookApiKey>
+        <FacebookApiSecret>72e945afa82014e38b4299c1dfdce87a</FacebookApiSecret>
+    </Api>
+    <Kids>
+        <ContactTo>danilo.aliberti@labone.net</ContactTo>
+        <ContactCc>william.silva@labone.net</ContactCc>
+        <ContactBcc>fabio.pereira@labone.net</ContactBcc>
+    </Kids>
+</mibConfig>

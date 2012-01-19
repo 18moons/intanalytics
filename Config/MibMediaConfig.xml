@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+  <storageArea0>
+    <default>http://logon.mediaibox.com.br/mibserver2/medias/</default>
+    <images>http://logon.mediaibox.com.br/mibserver2/medias/images/</images>
+    <mmedias>http://logon.mediaibox.com.br/mibserver2/medias/mmedias/</mmedias>
+  </storageArea0>
+</mibConfig>

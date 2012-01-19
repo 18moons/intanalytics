@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<map namespace="DXAnalytics.Models">
+  <entity name="AdmUser" table="ADM_USERS" />
+  <entity name="SubscriptionPlan" table="DX_SUBSCRIPTION_PLANS"/>
+</map>

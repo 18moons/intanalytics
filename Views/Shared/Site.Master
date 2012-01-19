@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DXAnalytics.Views.Shared.Site" %>
+<%@ Register Assembly="MibClient2.Web" Namespace="MibClient2.Web.Components" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+    <head runat="server">
+        <title>..:: DX Analytics ::..</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="pt-br" />
+        <meta http-equiv="pragma" content="no-cache" />
+		<meta name="author" content="LabOne - http://www.labone.net" />
+        <meta name="language" content="pt-br" />
+        <meta name="distribution" content="Global" />
+	    <meta name="robots" content="index, follow"/>
+	    <meta name="rating" content="General" />
+	    <meta name="geo.placename" content="São Paulo" />
+	    <meta name="geo.region" content="São Paulo" />
+	    <meta name="geo.country" content="Brasil" />
+	    <meta name="dc.language" content="pt" />
+        <meta name="generator" content="Microsoft Visual Studio 2010" />
+        <cc1:MibCssCompressor ID="MibCssCompressor" CompressionMode="CompressAndJoin" runat="server" />
+        <cc1:MibJsCompressor ID="MibJsCompressor" CompressionMode="CompressAndJoin" runat="server" />
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server"/>
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function () {
+                $("#loggof").click(function () {
+                    $.post("/DxAnalytics/Account/Loggof", function () { window.location = '/DxAnalytics/Account/Login'; });
+                });
+                $("#logo").click(function () {
+                    window.location = "/DxAnalytics/Home/Index";
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- BEGIN ALERT -->
+        <div id="alert" class="alert" style="display:none;">
+            <div class="content">
+                <h3></h3>
+                <h4></h4>
+                <a id="alertClose" href="#" title="Ok" class="btnDefault" style="left: 45%">ok</a>
+            </div>
+            <div class="bg"></div>
+        </div>
+        <!-- END ALERT -->
+        <!-- BEGIN WRAP -->
+        <div id="wrap">
+            <h3>.:: DX Analytics ::.</h3>
+            <!-- BEGIN MASTHEAD -->
+            <div id="masthead">
+                <h3>Master Head</h3>
+                <div id="logo"></div>
+                <div id="access">
+                    <div id="greeting">Hello, <%= Session["UName"]%>.</div>
+                    <div id="accesslnk"><a href="#" id="loggof">Logout</a></div>
+                </div>
+            </div>
+            <!-- END MASTHEAD -->
+            <!-- BEGIN CONTAINER -->
+            <div id="container">
+                <h3>Master Container</h3>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+            <!-- END CONTAINER -->    
+        </div>
+        <!-- END WRAP -->
+    </body>
+</html>

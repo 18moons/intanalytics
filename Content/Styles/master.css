@@ -1,0 +1,265 @@
+﻿@import "commons.css";
+
+/* CSS MASTER STRUCTURE */
+
+#wrap 
+{
+    width: 100%; 
+    height:auto; 
+    margin:0 auto 0 auto; 
+    text-align:left; 
+    border:0px solid #000; 
+}
+
+#wrap h3 { display: none; }
+
+/* CSS MASTER HEAD */
+
+#masthead  
+{
+    position:relative; 
+    height:7em; 
+    background:#FFF url(/DxAnalytics/Content/images/bg_header.gif) top repeat-x; 
+    padding: 0 0 0 0; 
+    min-width: 79em;
+}
+    
+#masthead h3 { display: none; }
+
+#logo  
+{
+    position:relative;
+    background:transparent url(/DxAnalytics/Content/images/header_logo.png) no-repeat; 
+    border: 0px solid black; 
+    width:14.3em;
+    height:5em;
+    padding: 0 0 0 0;
+    margin: 1em;
+    float:left;
+    cursor: pointer;
+} 
+
+#access  
+{
+    position:relative; 
+    min-width: 8em;
+    background:transparent url(/DxAnalytics/Content/images/icon_login.gif) no-repeat; 
+    padding: 0 0 0 1.55em;
+    float:right;
+    margin: 2.5em 2em;
+    font: 1em verdana,helvetica,sans-serif;
+    color:#474747;
+    border: 0px solid black;
+}
+
+#greeting { position:relative; float:left; padding: 0 0.50em 0 0; }
+#accesslnk { position:relative; float:left; }
+
+/* CSS CONTAINER BODY CENTER */
+
+#container  
+{
+    position:relative;
+    background:#FFFFFF url(/DxAnalytics/Content/images/bg_body.gif) left top repeat-x; 
+    min-height: 37em;
+    border: 0px solid black;
+    min-width: 79em;
+}
+
+/* CSS PANEL LEFT MENU */
+
+#panel
+{
+   position: relative;
+   border: 1px solid black;
+   background-color: #eee;
+   width: 250px;
+   min-height: 30em; 
+   overflow: hidden;
+   top: 2em; 
+   left: 2em;
+   -moz-border-radius: 10px;
+   -webkit-border-radius:10px;
+}
+
+ul#menu .submenu  
+{
+    position: relative;
+    background: transparent url(/DxAnalytics/Content/images/bg_menu_active.gif) repeat-x; 
+    color:#4b4b4b;
+    padding:0 8px;
+ }
+ 
+ ul#menu li a.beta
+ {
+     background:url(/DxAnalytics/Content/images/icon_beta.gif) no-repeat 80%;
+ }
+
+ ul#menu li a.disabled
+ {
+     color:#aaa;
+ }
+
+ul#menu, ul#menu ul 
+{
+  position: relative;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#menu a
+{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 20.7em;
+}
+
+ul#menu li 
+{
+  position: relative;
+  padding: 1px 1px 0 1px;
+  clear: left;
+}
+
+ul#menu li a 
+{
+  position: relative;
+  background: transparent;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+ul#menu li a.header
+{
+    position: relative; border-bottom: 1px solid #4b4b4b; width: 235px;
+}
+
+ul#menu li a.last
+{
+    position: relative; border-bottom: 1px solid #4b4b4b;
+}
+
+ul#menu li.selected 
+{
+    position: relative;
+    background-color: #4b4b4b;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+ul#menu li.selected a
+{
+    color:#fff;
+}
+
+ul#menu li a:hover {
+  position: relative; color:#000;
+}
+
+#img_panel { background: transparent url(/DxAnalytics/Content/images/icon_panel.gif) no-repeat; padding: 0 15px 0 1px; float:left;  }
+#img_visit { background: transparent url(/DxAnalytics/Content/images/icon_user.gif) no-repeat; padding: 0 15px 0 1px; float:left;  }
+#img_conte { background: transparent url(/DxAnalytics/Content/images/icon_content.gif) no-repeat; padding: 0 15px 0 1px; float:left;  }
+
+/* CSS VIEWER DATA REPORT */
+
+#reports 
+{
+    position:relative;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: #eee;
+    margin: -28.2em 2em 0 22.5em;
+    min-height: 30em;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+#report_main  
+{
+    position: relative;
+    padding: 0.60em 0.50em;
+    height:1.7em;
+    border-bottom: 1px solid black;
+}
+
+#report_title
+{
+    position: relative;
+    float:left;
+    color:#4b4b4b;
+    font-weight: bold;
+    padding: 0.25em 0 0 0;
+}
+
+#report_search
+{
+    position: relative;
+    padding: 0 1em 0 0;
+    color: #4b4b4b;
+    float:right;
+}
+
+#report_search li
+{
+  position:relative;
+  list-style-type:none;
+  display:inline;
+  font-size: 12px;
+  padding-left: 0.30em;
+  clear:left;
+}
+
+#report_content 
+{
+    position:relative;
+    border-bottom: 1px solid #4b4b4b;
+    background-color: #fff;
+    color:#4b4b4b;
+    min-height: 27.2em;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    height:auto;
+}
+
+#report_content .title
+{
+    background:#4b4b4b;
+    color:#fff;
+    -moz-border-radius:5px;
+    padding:5px;
+    margin:20px 18px 10px 18px;   
+}
+
+#report_content .statPanel
+{
+    float:left;
+    width:40%;
+    border-right:1px solid #4b4b4b;
+    margin:0 20px 0 20px;
+}
+
+#report_content .statPanel.right
+{
+    border:0px;
+}
+
+#report_content .statPanel label
+{
+    font-size:13pt;
+    display:block;    
+}
+
+#report_content .statPanel label a
+{
+    color:#4b4b4b;
+    font-weight:bold;
+}
+
+.wrap
+{
+    clear:left;
+    padding:10px;
+}

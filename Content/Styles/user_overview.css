@@ -1,0 +1,11 @@
+﻿#painel_user_audience_left
+{
+    float:left; 
+    width:50%;  
+}
+
+#painel_user_audience_right
+{
+    float:right; 
+    width:50%;  
+}

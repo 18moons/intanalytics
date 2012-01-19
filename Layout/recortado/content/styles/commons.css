@@ -1,0 +1,185 @@
+/****************************************************************************************************************************************************/
+/*	Reset Styles	*/
+/****************************************************************************************************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, 
+code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, 
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+	background:transparent;
+	border:0;
+	outline:0;
+	vertical-align:middle;
+	padding:0;
+	margin:0;
+}
+ol, ul{
+	list-style:none;
+}
+blockquote, q{
+	quotes:none;
+}
+ins{
+	text-decoration:none;
+}
+del{
+	text-decoration:line-through;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+h1, h2, h3, h4, h5{
+	font-size:9pt;
+}
+h2, p {
+	color:#4b4b4b;
+}
+/****************************************************************************************************************************************************/
+/*	General Styles	*/
+/****************************************************************************************************************************************************/
+*{
+	font-family:Helvetica, Arial, Tahoma, Sans-serif;
+	outline:none;
+	padding:0;
+	margin:0;
+}
+body{
+	font-size:9pt;
+	color:#4b4b4b;
+}
+a{
+	color:#4b4b4b;
+	text-decoration:none;
+}
+
+/****************************************************************************************************************************************************/
+/*	Header Styles	*/
+/****************************************************************************************************************************************************/
+
+.siteHeader
+{
+	height:73px;
+	background:url(../images/bg_header.gif);
+	padding:10px;
+}
+.siteHeader ul li.logo
+{
+	width:183px;
+	height:64px;
+	background:url(../images/header_logo.png);
+	float:left;
+	margin:5px 0 0 10px;
+}
+
+.siteHeader ul li.login
+{
+	float:right;
+	margin:30px 10px 0 0;
+}
+
+.siteHeader .login p
+{
+	background:url(../images/icon_login.gif);
+	background-repeat:no-repeat;
+	padding:0 0 0 20px;
+}
+
+.siteHeader a
+{
+	font-weight:bold;
+	color:#6a7ecf;
+}
+
+/****************************************************************************************************************************************************/
+/*	Body Styles	*/
+/****************************************************************************************************************************************************/
+
+.site .safe .content
+{
+	background:url(../images/bg_body.gif);
+	padding:15px;
+}
+
+/****************************************************************************************************************************************************/
+/*	Menu Styles	*/
+/****************************************************************************************************************************************************/
+
+.content .menu
+{
+	width:300px;
+	border:1px solid #4b4b4b;
+	background:#eee;
+	float:left;
+}
+
+.menu ul li.menuHeader
+{
+	background:url(../images/icon_panel.gif) no-repeat 8px;
+	padding:8px 8px 8px 28px;
+	border-bottom:1px solid #4b4b4b;
+	font-weight:bold;
+}
+
+.menu ul li.category
+{
+	border-bottom:1px dotted #4b4b4b;
+}
+
+.menu ul li.category div
+{
+	padding:8px 8px 8px 28px;
+	font-weight:bold;
+}
+
+.menu ul #users div
+{
+	background:url(../images/icon_user.gif) no-repeat 8px;
+}
+
+.menu ul #content div
+{
+	background:url(../images/icon_content.gif) no-repeat 8px;
+}
+
+.menu .subMenu
+{
+	border-top:1px dotted #4b4b4b;
+	background:#eee;
+	background:url(../images/bg_menu_active.gif) repeat-x;
+}
+
+.menu .subMenu li
+{
+	margin:0 5px;
+	padding:6px;
+}
+
+.menu .subMenu li.selected
+{
+	
+	background:#4b4b4b;
+}
+.menu .subMenu li.selected a
+{
+	color:#fff;
+}
+
+/****************************************************************************************************************************************************/
+/*	Content Styles	*/
+/****************************************************************************************************************************************************/
+
+.reportContent
+{
+	background:#fff;
+	border:1px solid #4b4b4b;
+	margin:0 0 0 315px;
+} 
+.reportContent ul li.title
+{
+	font-weight:bold;
+	padding:6px;
+	border-bottom:1px solid #4b4b4b;
+}
+.reportContent ul li.body
+{
+	height:400px;
+}

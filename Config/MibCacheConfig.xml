@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+  <default>
+    <iis>true</iis>
+    <memcached>false</memcached>
+    <disk>false</disk>
+    <diskPath>c:\diskcache</diskPath>
+    <diskDisableTime>60</diskDisableTime>
+    <!--memcachedServers>192.168.1.84:11211</memcachedServers>-->
+  </default>
+</mibConfig>

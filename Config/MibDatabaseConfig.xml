@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+
+  <default>
+    <type>sql2005</type>
+    <server>ec2-75-101-221-219.compute-1.amazonaws.com</server>
+      <database>dxdb</database>
+    <username>mediaibox</username>
+    <password>iwannarock</password>
+  </default>
+</mibConfig>

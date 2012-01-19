@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mibConfig>
+	<default>
+		<media_types>0</media_types>
+		<pages>0</pages>
+		<lpag_cont>0</lpag_cont>
+		<mmedias>0</mmedias>
+		<channels>0</channels>
+		<contents>0</contents>
+		<flashes>0</flashes>
+		<links>0</links>
+		<images>0</images>
+		<texts>0</texts>
+		<tvshows>0</tvshows>
+		<tvchannels>0</tvchannels>
+		<tvschedules>0</tvschedules>
+		<tvgenres>0</tvgenres>
+		<tvcategories>0</tvcategories>
+		<tvshow_headlines>0</tvshow_headlines>
+		<tva_users>0</tva_users>
+		<busca_palavras>0</busca_palavras>
+    <alert_type>0</alert_type>
+    <tva_cities>0</tva_cities>
+    <tva_banner_group>0</tva_banner_group>
+    <tva_regions>0</tva_regions>
+    <tva_products>0</tva_products>
+    <tag_cloud>0</tag_cloud>
+    <tvschedules>0</tvschedules>
+    <tva_channel_group>0</tva_channel_group>
+    <tva_banner_group>0</tva_banner_group>
+    <tva_help_contact>0</tva_help_contact>
+    <tvpackages>0</tvpackages>
+    <short_url>0</short_url>
+  </default>
+</mibConfig>

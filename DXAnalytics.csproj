@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DB4EE4A-532A-4740-B3CB-68260913F853}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXAnalytics</RootNamespace>
+    <AssemblyName>DXAnalytics</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MibClient2">
+      <HintPath>..\..\..\MIBDLLS\Trunk\MibClient2.dll</HintPath>
+    </Reference>
+    <Reference Include="MibClient2.Web">
+      <HintPath>..\..\..\MIBDLLS\Trunk\MibClient2.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="MibCompressor">
+      <HintPath>..\..\..\MIBDLLS\Trunk\MibCompressor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Tools.cs" />
+    <Content Include="Content\Flashes\AnyChart.swf" />
+    <Content Include="Content\Flashes\expressInstall.swf" />
+    <Content Include="Content\Scripts\flexigrid.js" />
+    <Content Include="Content\Scripts\home.js" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Base\Authenticator.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Base\CompressCacheFilter.cs" />
+    <Compile Include="Base\DefaultLoads.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReportingController.cs" />
+    <Compile Include="Controllers\XmlController.cs" />
+    <Compile Include="GeneralConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="map.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>map.mibobject</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdmUser.cs" />
+    <Compile Include="Models\ReportFilters.cs" />
+    <Compile Include="Models\ReportingData.cs" />
+    <Compile Include="Models\ReportingViewData.cs" />
+    <Compile Include="Models\SubscriptionPlan.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\DxConfig.xml" />
+    <Content Include="Config\GeneralConfig.xml" />
+    <Content Include="Config\MibCacheConfig.xml" />
+    <Content Include="Config\MibClientWebConfig.xml" />
+    <Content Include="Config\MibDatabaseConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\MibLogConfig.xml" />
+    <Content Include="Config\MibMediaConfig.xml" />
+    <Content Include="Config\MibObjectCacheConfig.xml" />
+    <Content Include="Config\MibPointerBridgeConfig.xml" />
+    <Content Include="Config\MibPointerConfig.xml" />
+    <Content Include="Config\MibPointerLibConfig.xml" />
+    <Content Include="Content\Images\bgButtom.gif" />
+    <Content Include="Content\Images\bgFields.gif" />
+    <Content Include="Content\Images\bg_body.gif" />
+    <Content Include="Content\Images\bg_header.gif" />
+    <Content Include="Content\Images\bg_menu_active.gif" />
+    <Content Include="Content\Images\blank.gif" />
+    <Content Include="Content\Images\header_logo.png" />
+    <Content Include="Content\Images\icon_beta.gif" />
+    <Content Include="Content\Images\icon_content.gif" />
+    <Content Include="Content\Images\icon_login.gif" />
+    <Content Include="Content\Images\icon_panel.gif" />
+    <Content Include="Content\Images\icon_user.gif" />
+    <Content Include="Content\Images\icoSelect.gif" />
+    <Content Include="Content\Images\imgShade.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\Images\jQueryUI\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\Images\jQueryUI\ui-icons_222222_256x240.png" />
+    <Content Include="Content\Images\jQueryUI\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\Images\jQueryUI\ui-icons_454545_256x240.png" />
+    <Content Include="Content\Images\jQueryUI\ui-icons_888888_256x240.png" />
+    <Content Include="Content\Images\jQueryUI\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\Images\logoMibLoading.gif" />
+    <Content Include="Content\Scripts\commons.js" />
+    <Content Include="Content\Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Content\Scripts\jquery.cookie.js" />
+    <Content Include="Content\Scripts\jquery-ui-1.8.9.custom.min.js" />
+    <Content Include="Content\Scripts\jquery.dropshadow.js" />
+    <Content Include="Content\Scripts\login.js" />
+    <Content Include="Content\Scripts\mibAjax.js" />
+    <Content Include="Content\Scripts\swfobject.js" />
+    <Content Include="Content\Styles\commons.css" />
+    <Content Include="Content\Styles\flexigrid\flexigrid.css" />
+    <Content Include="Content\Styles\flexigrid\images\._fhbg.gif" />
+    <Content Include="Content\Styles\flexigrid\images\._wbg.gif" />
+    <Content Include="Content\Styles\flexigrid\images\bg.gif" />
+    <Content Include="Content\Styles\flexigrid\images\btn-sprite.gif" />
+    <Content Include="Content\Styles\flexigrid\images\ddn.png" />
+    <Content Include="Content\Styles\flexigrid\images\dn.png" />
+    <Content Include="Content\Styles\flexigrid\images\fhbg.gif" />
+    <Content Include="Content\Styles\flexigrid\images\first.gif" />
+    <Content Include="Content\Styles\flexigrid\images\hl.png" />
+    <Content Include="Content\Styles\flexigrid\images\last.gif" />
+    <Content Include="Content\Styles\flexigrid\images\line.gif" />
+    <Content Include="Content\Styles\flexigrid\images\load.gif" />
+    <Content Include="Content\Styles\flexigrid\images\load.png" />
+    <Content Include="Content\Styles\flexigrid\images\magnifier.png" />
+    <Content Include="Content\Styles\flexigrid\images\next.gif" />
+    <Content Include="Content\Styles\flexigrid\images\prev.gif" />
+    <Content Include="Content\Styles\flexigrid\images\up.png" />
+    <Content Include="Content\Styles\flexigrid\images\uup.png" />
+    <Content Include="Content\Styles\flexigrid\images\wbg.gif" />
+    <Content Include="Content\Styles\jquery-ui-1.8.9.custom.css" />
+    <Content Include="Content\Styles\jquery.lightbox-0.5.css" />
+    <Content Include="Content\Styles\master.css" />
+    <Content Include="Content\Styles\login.css" />
+    <Content Include="Content\Styles\screen.css" />
+    <Content Include="Content\Styles\user_overview.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Account\Login.aspx" />
+    <Content Include="Views\Default.aspx" />
+    <Content Include="Views\Reporting\ControlPanel.ascx" />
+    <Content Include="Views\Reporting\MediaEngagement.ascx" />
+    <Content Include="Views\Reporting\MediaPerformance.ascx" />
+    <Content Include="Views\Reporting\PlaylistPerformance.ascx" />
+    <Content Include="Views\Reporting\PlaylistPositionPerformance.ascx" />
+    <Content Include="Views\Reporting\ReportDefaultSearch.ascx" />
+    <Content Include="Views\Reporting\UserRecurrence.ascx" />
+    <Content Include="Views\Reporting\UserBehaviour.ascx" />
+    <Content Include="Views\Reporting\UsersActivations.ascx" />
+    <Content Include="Views\Reporting\UsersOverview.ascx" />
+    <Content Include="Views\Shared\Footer.aspx" />
+    <Content Include="Views\Shared\Header.aspx" />
+    <Content Include="Views\Shared\Menu.ascx" />
+    <Content Include="Views\Xml\ActivatedKeys.aspx" />
+    <Content Include="Views\Xml\ControlPanelVisits.aspx" />
+    <Content Include="Views\Xml\QualityPreferences.aspx" />
+    <Content Include="Views\Xml\SubtitlePreferences.aspx" />
+    <Content Include="Views\Xml\LastLogin.aspx" />
+    <Content Include="Views\Xml\LogoutInterval.aspx" />
+    <Content Include="Views\Xml\MediaPerformance.aspx" />
+    <Content Include="Views\Xml\MediaPerformanceAnalytic.aspx" />
+    <Content Include="Views\Xml\PlaylistPerformanceAnalytic.aspx" />
+    <Content Include="Views\Xml\PlaylistPositionPerformanceAnalytic.aspx" />
+    <Content Include="Views\Xml\ProfilesActivity.aspx" />
+    <Content Include="Views\Xml\ProfilesAge.aspx" />
+    <Content Include="Views\Xml\ProfilesGender.aspx" />
+    <Content Include="Views\Reporting\Preferences.ascx" />
+    <Content Include="Views\Xml\AudioPreferences.aspx" />
+    <Content Include="Views\Xml\SessionTimming.aspx" />
+    <Content Include="Views\Xml\UserAudience.aspx" />
+    <Content Include="Views\Xml\ProfilesPerUser.aspx" />
+    <Content Include="Views\Xml\UserBehaviour.aspx" />
+    <Content Include="Views\Xml\UsersSubscriptions.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Shared\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="map.mibobject">
+      <Generator>MibDataMapping</Generator>
+      <LastGenOutput>map.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49769</DevelopmentServerPort>
+          <DevelopmentServerVPath>/DxAnalytics</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DXAnalytics</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
